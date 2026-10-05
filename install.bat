@@ -55,5 +55,5 @@ if exist "%APP_EXE%" (
 ) else (
     start "" "%ProgramFiles%\Octopus Intel\OctopusIntel.exe"
 )
-timeout /t 2 >nul
+ping -n 3 127.0.0.1 >nul
 exit /b 0
